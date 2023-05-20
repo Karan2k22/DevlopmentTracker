@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
-import DataCard from "../component/DataCard";
+import DataCard from "../component/dataCard/DataCard";
 import { FiPlus } from "react-icons/fi";
 import { BiSearchAlt } from "react-icons/bi";
 import Button from "react-bootstrap/Button";
