@@ -14,6 +14,11 @@
     margin: 0px 20px 20px 20px;
     padding: 8px;
 }
+.btn_containor {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
 .craete_btn_container {
     border-right: 2px solid gray;
      margin: 0px 5px 0px 5px;
@@ -81,12 +86,13 @@ margin: 5px;
     right: 2px;
     top: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50px;
 
 }
 
 @media only screen and (max-width: 600px) {
     .top_bar {
-        flex-direction: column;
+        flex-direction: row;
     }
     .main_container {
         flex-direction: column;
@@ -98,21 +104,39 @@ margin: 5px;
         padding: 10px;
     }
     .pfofile {
-        margin: 10px;
+        margin: 0px;
     }
     .image {
-        left: 14px;
-        top: 68px;
+        /* left: 14px;
+        top: 68px; */
+        top: 8px;
         box-shadow: none;
+        position: relative;
+        align-items: right;
+        border-radius: 50px;
+        margin-right: 12px;
     }
     .name {
-            right: -23px;
-            border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        visibility: hidden;
+            /* right: -23px; */
+            /* border-radius: 0px 15px 15px 0px; */
+    }
+    .image:hover .name{
+        visibility: visible;
+        background: red;
+        /* display: block; */
     }
     .craete_btn {
-        font-size: 12px;
+        font-size: 14px;
         width: 118px;
         height: 30px;
         /* margin: 5px; */
+    }
+    .btn_containor {
+        flex-direction: column;
+    }
+    .search_bar {
+        margin-top: 20px;
     }
     }

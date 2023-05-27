@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
-import DataCard from "../component/dataCard/DataCard";
+import DataCard from "../component/dataCard/DataCard"
 import { FiPlus } from "react-icons/fi";
 import { BiSearchAlt } from "react-icons/bi";
 import Button from "react-bootstrap/Button";
@@ -190,12 +190,7 @@ console.log("selected data is ", data)
       {/* Top Bar */}
       <div style={{ background: "rgb(211 201 196)" }}>
         <div className="top_bar">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "8px",
-            }}
+          <div className="btn_containor"
           >
             <div className="craete_btn_container">
               <button
@@ -239,6 +234,7 @@ console.log("selected data is ", data)
               />
             </div>
           </div>
+
         </div>
       </div>
 
